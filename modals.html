@@ -12,13 +12,25 @@
 </head>
 
 <body>
-
+    <div class="container">
+        <h2>Modals</h2>
+        <a href="#terms" class="btn orange modal-trigger">Terms & Conditions</a>
+        <div class="modal" id="terms">
+            <div class="modal-content">
+                <h4>Terms & Conditions</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis aliquam orci. Orci
+                    varius natoque penatibus et
+                    magnis dis parturient montes, nascetur ridiculus mus.</p>
+            </div>
+            <div class="modal-footer"><a href="" class="btn modal-close orange">Agree & Close</a></div>
+        </div>
+    </div>
     <!-- Compiled and minified JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script>
         $(document).ready(function () {
-            $(".sidenav").sidenav();
+            $(".modal").modal();
         });
     </script>
 </body>
